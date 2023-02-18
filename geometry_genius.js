@@ -112,8 +112,9 @@ function publishResult(result, type) {
     resultDiv.appendChild(section);
     count++;
 
-   //convert meter square 
-    button.addEventListener('click', () => {
+//convert meter square 
+    button.addEventListener('click', () =>
+     {
         let mixedArray = button.previousElementSibling.textContent.split(' ');
 
         if (mixedArray.includes('cm2')) {
@@ -125,5 +126,6 @@ function publishResult(result, type) {
             para2.innerHTML = `${centimeterSqr} cm<sup>2</sup>`;
             button.innerHTML = `Convert to m<sup>2</sup>`;
         }
-    })
+    }
+    )
 }
