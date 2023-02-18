@@ -70,7 +70,7 @@ function random255() {
     return random;
 }
 
-// input value validation function
+// input value validation check
 function validation(reference) {
     let num1 = Number(reference.previousElementSibling.children[0].value);
     let num2 = Number(reference.previousElementSibling.children[1].value);
@@ -88,7 +88,7 @@ function input2Value(reference) {
     return Number(reference.previousElementSibling.children[1].value);
 }
 
-//function for publishing result on resultDiv
+//Result Generate
 let count = 1;
 function publishResult(result, type) {
     const para1 = document.createElement('p');
@@ -112,7 +112,7 @@ function publishResult(result, type) {
     resultDiv.appendChild(section);
     count++;
 
-   //convert meter square
+   //convert meter square 
     button.addEventListener('click', () => {
         let mixedArray = button.previousElementSibling.textContent.split(' ');
 

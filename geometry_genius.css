@@ -19,11 +19,11 @@
     text-align: center;
     width: 100%;
     border-radius: 8px;
-    background-color: #1090D8;
+    background-color: #0f7bb9;
     cursor: pointer;
   }
   .btn-primary:hover {
-    background-color: #0f7bba;
+    background-color: #5eb0df;
   }
   
   /* Header styles here */
@@ -123,6 +123,7 @@
     display: inline-block;
   }
   
+  /*Making Responsive*/
   @media screen and (max-width: 1350px) {
     .card-container {
       grid-template-columns: 1fr 1fr !important;
