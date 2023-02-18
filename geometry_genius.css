@@ -11,3 +11,142 @@
   padding: 0 12px;
   margin: 0 auto;
 }
+.btn-primary {
+    border: none;
+    padding: 1rem;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    border-radius: 8px;
+    background-color: #1090D8;
+    cursor: pointer;
+  }
+  .btn-primary:hover {
+    background-color: #0f7bba;
+  }
+  
+  /* Header styles here */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgba(16, 144, 216, 0.1);
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-bottom: 3rem;
+  }
+  header p {
+    font-size: 1.8rem;
+  }
+  header .h-btn {
+    width: 100px;
+  }
+  
+  main {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+  }
+  main #resultDiv {
+    background-color: rgba(16, 144, 216, 0.3);
+    flex-grow: 1;
+    align-self: start;
+    position: sticky;
+    top: 0;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+  }
+  main #resultDiv h2 {
+    margin-bottom: 1.7rem;
+  }
+  main #resultDiv .result-section {
+    display: flex;
+    gap: 7px;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  main #resultDiv button {
+    padding: 2px 5px;
+    font-size: 0.8rem;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  main .card-container {
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  main .card {
+    width: 320px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    color: #414141;
+    border-radius: 8px;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+  }
+  main .card > * {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  main .card img {
+    display: inline-block;
+    width: 90%;
+    height: 194px;
+  }
+  main .card .input-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  main .card input {
+    width: 70px;
+    height: 30px;
+    padding: 3px 7px;
+    margin-left: 1rem;
+    background-color: #F1F1F1;
+    border: none;
+    border-radius: 4px;
+  }
+  main .card input:focus {
+    outline: transparent;
+  }
+  main .card input[type=checkbox] {
+    width: 20px;
+    display: inline-block;
+  }
+  
+  @media screen and (max-width: 1350px) {
+    .card-container {
+      grid-template-columns: 1fr 1fr !important;
+    }
+  }
+  @media screen and (max-width: 980px) {
+    #resultDiv {
+      flex-grow: 0 !important;
+    }
+    .card-container {
+      grid-template-columns: 1fr !important;
+      width: auto;
+    }
+  }
+  @media screen and (max-width: 630px) {
+    #resultDiv {
+      align-self: center !important;
+      background-color: rgb(16, 144, 216) !important;
+    }
+    #resultDiv button {
+      border: 1px solid white;
+    }
+    main {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
